@@ -1,0 +1,28 @@
+{
+    "employee": [
+        {
+            "Id": "1",
+            "FirstName": "John",
+            "SurName": "Smith",
+            "Country": "USA",
+            "City": "Chicago",
+            "StartingDate": "June 16, 2008"
+        },
+        {
+            "Id": "2",
+            "FirstName": "Juan",
+            "SurName": "Perez",
+            "Country": "Mexico",
+            "City": "Silao",
+            "StartingDate": "October 21, 2014"
+        },
+        {
+            "Id": "3",
+            "FirstName": "Pedro",
+            "SurName": "Pablo",
+            "Country": "Colombia",
+            "City": "Medellin",
+            "StartingDate": "April 1,2018"
+        }
+    ]
+}
