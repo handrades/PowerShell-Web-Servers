@@ -14,7 +14,7 @@ Start-PodeServer {
     Add-PodeRoute -Method Get -Path '/employee' -ScriptBlock {
         Write-Host "$(Write-Request -WEvent $WebEvent | Format-List | Out-String)"
         $Employees = Get-Content -Path ./database/employees.json -RAW | ConvertFrom-Json
-        Write-PodeJsonResponse -StatusCode 200 -Value $Employees
+        Write-PodeJsonResponse -StatusCode 200 -Value $Employees.Employee
     }
 
     Add-PodeRoute -Method Post -Path '/employee' -ScriptBlock {
@@ -24,8 +24,7 @@ Start-PodeServer {
         $Employees = Get-Content -Path ./database/employees.json | ConvertFrom-Json
         $Employees.Employee += $Data
         $Employees | ConvertTo-Json | Out-File ./database/employees.json -Force
-        Write-PodeJsonResponse -StatusCode 200 -Value $Employees
+        Write-PodeJsonResponse -StatusCode 200 -Value $Employees.Employee
     }
 
 }
-    
