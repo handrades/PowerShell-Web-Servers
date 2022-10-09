@@ -3,7 +3,6 @@ Param(
 )
 
 Import-Module Pode
-Import-Module ./helpers.ps1
 
 Start-PodeServer {
 

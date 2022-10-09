@@ -9,6 +9,7 @@ Start-PodeServer {
     Add-PodeEndpoint -Address * -Port ($port ? $port : 8080) -Protocol Https -SelfSigned
 
     New-PodeLoggingMethod -Terminal | Enable-PodeErrorLogging -Levels Error,Warning,Informational
+    New-PodeLoggingMethod -Terminal | Enable-PodeRequestLogging
 
     Add-PodeSchedule -Name EveryMin -Cron '*/1 * * * *' -ScriptBlock {
         Write-Host "Forever every minute - $(Get-Date)"
