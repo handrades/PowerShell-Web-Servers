@@ -1,0 +1,13 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: servicebus
+spec:
+  type: bindings.azure.servicebus
+  version: v1
+  metadata:
+  - name: connectionString
+  - name: queueName
+    value: "idaprdemo"
+  - name: ttlInSeconds
+    value: 60
