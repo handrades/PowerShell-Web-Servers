@@ -3,7 +3,7 @@
 Initialize dapr
 
 ```PowerShell
-cd Dapr.GET_POST
+cd Dapr.Pub-Sub
 dapr init
 ```
 
