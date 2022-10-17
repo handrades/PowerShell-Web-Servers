@@ -1,0 +1,14 @@
+{
+  "main": "./src/run.ps1",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "name": "Pode.Pages",
+  "scripts": {
+    "build": "psake",
+    "install": "yarn install --force --ignore-scripts --modules-folder pode_modules",
+    "start": "./src/run.ps1",
+    "test": "invoke-pester ./tests/*.ps1"
+  },
+  "author": "Hector Andrade"
+}
