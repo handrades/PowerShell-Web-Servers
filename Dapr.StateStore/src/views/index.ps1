@@ -6,7 +6,6 @@ html -Attributes @{'lang' = 'en' } -Content {
         meta -name 'viewport' -content_tag 'width=device-width, initial-scale=1'
         Link -href 'https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' -rel 'stylesheet' -CrossOrigin 'anonymous' -Integrity 'sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I'
         Link -href 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' -rel 'stylesheet' -CrossOrigin 'anonymous' -Integrity 'sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=='
-        # link -href '.\css\style.css' -rel 'stylesheet' -type 'text/css'
     }
 
     body -class 'bg-light' -Content {
