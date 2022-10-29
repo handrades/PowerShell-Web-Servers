@@ -6,7 +6,7 @@ You'll need to create a service bus in Azure and configure right parameters in s
 Initialize dapr
 
 ```PowerShell
-cd Dapr.Pub-Sub
+cd Dapr.ServiceBus
 dapr init
 ```
 

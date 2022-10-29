@@ -3,7 +3,7 @@
 Initialize dapr
 
 ```PowerShell
-cd Dapr.Pub-Sub
+cd Dapr.Scheduler
 dapr init
 ```
 
