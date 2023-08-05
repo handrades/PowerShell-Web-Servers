@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/powershell:lts-7.2-alpine-3.14
+FROM mcr.microsoft.com/powershell:lts-7.2-alpine-3.17
 
-RUN pwsh -c 'Install-Module Pode -Scope CurrentUser -Force'
+RUN pwsh -c 'Install-Module Pode -Scope AllUsers -Force'
 
 COPY ./src/ /app/
 WORKDIR /app/
