@@ -1,5 +1,5 @@
 Param(
-    [int]$port = (Get-ChildItem env:/HTTP_PORT).value
+    [int]$port = $env:HTTP_PORT
 )
 
 Import-Module Pode
