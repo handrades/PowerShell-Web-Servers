@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/powershell:lts-7.2-alpine-3.17
+FROM mcr.microsoft.com/powershell:preview-7.4-alpine-3.17
 
 RUN pwsh -c 'Install-Module Pode -Scope AllUsers -Force'
 
