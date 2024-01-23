@@ -1,12 +1,12 @@
 Param(
-    [int]$port = $env:HTTP_PORT
+    [int]$port = $env:HTTP_PORT ? $env:HTTP_PORT : 3000
 )
 
 Import-Module Pode
 
 Start-PodeServer {
 
-    Add-PodeEndpoint -Address * -Port ($port ? $port : 3000) -Protocol Https -SelfSigned
+    Add-PodeEndpoint -Address * -Port $port -Protocol Https -SelfSigned
 
     New-PodeLoggingMethod -Terminal | Enable-PodeErrorLogging -Levels Error,Warning,Informational
     New-PodeLoggingMethod -Terminal | Enable-PodeRequestLogging
