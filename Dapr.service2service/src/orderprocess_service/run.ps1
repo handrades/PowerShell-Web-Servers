@@ -1,12 +1,12 @@
 Param(
-    [int]$port = $env:HTTP_PORT
+    [int]$port = $env:HTTP_PORT ? $env:HTTP_PORT : 6001
 )
 
 Import-Module Pode
 
 Start-PodeServer {
 
-    Add-PodeEndpoint -Address * -Port ($port ? $port : 6001) -Protocol Http
+    Add-PodeEndpoint -Address * -Port $port -Protocol Http
 
     New-PodeLoggingMethod -Terminal | Enable-PodeErrorLogging -Levels Error,Warning,Informational
     New-PodeLoggingMethod -Terminal | Enable-PodeRequestLogging
